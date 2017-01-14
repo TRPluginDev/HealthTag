@@ -18,9 +18,8 @@ class Can extends PluginBase implements Listener{
 		$this->getServer()->getPluginManager()->registerEvents($this,$this);
 				$this->getServer()->getScheduler()->scheduleRepeatingTask(new CanT($this),12);
 			//	 if($this->getServer()->getPluginManager()->getPlugin("PureChat") != null){
-        //    $this->pp = 1;
         //    $this->getLogger()->info("§7» §aPureChat ile bağlandı!");
-        }
+       // }
 	    @mkdir($this->getDataFolder());
         if(!file_exists($this->getDataFolder()."config.yml")){
             $this->saveResource("config.yml");
