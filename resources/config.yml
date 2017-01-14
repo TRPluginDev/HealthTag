@@ -1,0 +1,9 @@
+//Plugin by ertenysf
+
+//  Coming ({tag} = PureChat Tag)
+
+// {oyuncu} = Player Name
+Tag: "§7{oyuncu}"
+
+// HP Symbol
+Sembol: "§c♥"
