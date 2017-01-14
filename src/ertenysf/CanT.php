@@ -14,7 +14,7 @@ class CanT extends PluginTask {
 	   foreach($this->getOwner()->getServer()->getOnlinePlayers() as $o){
 	    $player = $o;
 		        $cfg = new Config($this->getDataFolder()."config.yml", Con
-		$tag = strreplace("{oyuncu}", $o->getName(), $cfg->ge("Tag"));
+		$tag = str_replace("{oyuncu}", $o->getName(), $cfg->ge("Tag"));
 	    $o->setNameTag($tag . "\n   " . ($o->getHealth() / $o->getMaxHealth() * 20).$cfg->get("Sembol"));
 	  }
      }
