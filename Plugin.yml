@@ -1,0 +1,6 @@
+name: HealthTag
+main: ertenysf\Can
+version: 1.0
+api: 2.0.0
+author: ertenysf
+description: Oyuncu Canı Göterir
