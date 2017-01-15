@@ -20,11 +20,11 @@ class Can extends PluginBase implements Listener{
 			//	 if($this->getServer()->getPluginManager()->getPlugin("PureChat") != null){
         //    $this->pp = 1;
         //    $this->getLogger()->info("§7» §aPureChat ile bağlandı!");
-        }
+//        }
 	    @mkdir($this->getDataFolder());
         if(!file_exists($this->getDataFolder()."config.yml")){
             $this->saveResource("config.yml");
+                    $cfg = new Config($this->getDataFolder()."config.yml", Config::YAML);
          }
-        $cfg = new Config($this->getDataFolder()."config.yml", Config::YAML);
         }
        }
